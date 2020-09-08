@@ -45,3 +45,20 @@ function greet(name, lastName){
 }
 greet('john', 'john');
 greet('mary');
+
+//function that calculates a value
+function square (number){
+    return number * number;
+}
+// let number = square(10);
+console.log(square(5));
+
+alert('this is it')
+console.log(1);
+let age = 4;
+let year = 2020;
+console.log(age, year);
+
+age = 76;
+console.log(age)
+
