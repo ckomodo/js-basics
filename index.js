@@ -68,8 +68,29 @@
 // cars = 5;
 
 var msgOne = document.querySelector(".btnOne");
+var msgTwo = document.querySelector(".btnTwo");
+var rstBtn = document.querySelector(".resetBtn")
 function firstFunction(){
     
-    msgOne = console.log("this is my first function");
+    msgOne = confirm("this is my first function");
+    msgTwo = confirm("this is me showing off");
 }
-document.addEventListener("click", firstFunction)
+msgOne.addEventListener("click", firstFunction);
+msgTwo.addEventListener("click", firstFunction);
+
+
+var paragraph = document.querySelector("#para");
+function secondFunction(){
+    paragraph = document.querySelector("#para").textContent = "this is my first DOM-injected paragraph";
+}
+secondFunction();
+
+document.querySelector("body").style.backgroundColor = "yellow";
+document.querySelector("img").style.float = "right";
+
+function resetPage (){
+    rstBtn = document.querySelector("body").style.backgroundColor = "snow";
+    rstBtn = document.querySelector("p").textContent = "this page has been reset";
+    rstBtn = document.querySelector("img").style.display = "none";
+}
+rstBtn.addEventListener("click", resetPage);
