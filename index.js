@@ -91,6 +91,10 @@ document.querySelector("img").style.float = "right";
 function resetPage (){
     rstBtn = document.querySelector("body").style.backgroundColor = "snow";
     rstBtn = document.querySelector("p").textContent = "this page has been reset";
-    rstBtn = document.querySelector("img").style.display = "none";
+    rstBtn = document.querySelector("img").src = "http://lorempixel.com/400/200/";
+    rstBtn = document.querySelector("img").style.float = "left";
+    rstBtn = document.querySelector("h1").textContent = "this is DOM 101";
+    rstBtn = document.querySelector("h1").style.textDecoration = "underline";
+
 }
 rstBtn.addEventListener("click", resetPage);
