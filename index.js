@@ -98,3 +98,14 @@ function resetPage (){
 
 }
 rstBtn.addEventListener("click", resetPage);
+
+
+const message = function (){
+    console.log("3 second delay");
+}
+setTimeout(message, 3000);
+
+const newMessage = function(){
+    console.log("no delays here");
+}
+newMessage();
